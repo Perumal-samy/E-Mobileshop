@@ -1,0 +1,216 @@
+/* Home.css */
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #222;
+  font-size: 2px;
+  margin-bottom: 1rem;
+}
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+/* General Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Welcome Section */
+.welcome-section {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.typewriter-text {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 15px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.typewriter-sub {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  font-weight: 500;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Discount Offers Section */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Explore and Support Sections */
+.explore-section, .support-section {
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.support-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.support-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-color: #333;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.support-card:hover {
+  transform: scale(1.05);
+}
+
+.support-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.support-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.support-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .carousel .slider-item {
+    height: 50vh; /* Adjust slider height for tablets */
+  }
+
+  .support-card {
+    height: 420px; /* Make the support cards shorter on smaller devices */
+  }
+
+  .support-features {
+    grid-template-columns: 1fr 1fr; /* Two columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Welcome Section */
+  .welcome-section {
+    height: 40vh; /* Adjust slider height for mobile */
+  }
+
+  .slider-item {
+    height: 100%; /* Full height on mobile */
+    background-position: center center;
+  }
+
+  /* Discount Offers */
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+
+  .carousel img {
+    object-fit: contain; /* Maintain aspect ratio on mobile */
+  }
+
+  /* Explore and Support Section */
+  .support-features {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    gap: 15px;
+  }
+
+  .support-card {
+    height: 200px; /* Shorten cards on mobile */
+  }
+
+  .support-card .overlay {
+    padding: 15px;
+  }
+
+  .support-card h4 {
+    font-size: 1rem;
+  }
+
+  .support-card p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}

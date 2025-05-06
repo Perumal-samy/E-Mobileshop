@@ -1,0 +1,179 @@
+/* Purchase.css */
+.purchase-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.success-box {
+  background-color: #d4edda;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.success-box h3 {
+  font-size: 1.8rem;
+  color: #28a745;
+}
+
+.success-box p {
+  font-size: 1.2rem;
+  color: #155724;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.product-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-box h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.payment-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.payment-form label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.payment-form select,
+.payment-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.payment-form input[type="text"] {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.payment-form button {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .purchase-page {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .cart-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-box {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .payment-form {
+    padding: 15px;
+  }
+
+  .payment-form label {
+    font-size: 1rem;
+  }
+
+  .payment-form select,
+  .payment-form input {
+    font-size: 0.95rem;
+  }
+
+  .payment-form button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .purchase-page {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-box {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .payment-form {
+    padding: 15px;
+  }
+
+  .payment-form label {
+    font-size: 0.9rem;
+  }
+
+  .payment-form select,
+  .payment-form input {
+    font-size: 0.9rem;
+  }
+
+  .payment-form button {
+    font-size: 1rem;
+  }
+}
